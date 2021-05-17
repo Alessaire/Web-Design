@@ -1,0 +1,57 @@
+.grid{
+    display: grid;
+    /* grid-template-columns: 50px 300px;--->
+   <!--- grid-template-rows: 200px 75px;--->
+ */
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: " head head head" "menu main nav" "foot foot foot";
+}
+
+.a{
+    grid-area: head;
+    background-color: burlywood;
+}
+.b{
+    grid-area: menu;
+    background-color: cadetblue;
+}
+.c{
+    grid-area: main;
+    background-color: darkgoldenrod;
+}
+.e{
+    grid-area: nav;
+    background-color:darkgray;
+}
+.d{
+    grid-area: foot;
+    background-color: darkgreen;
+}
+
+header {
+    grid-area: my-header;
+    background-color: blueviolet;
+}
+
+nav {
+    grid-area: my-nav;
+    background-color: cornflowerblue;
+}
+
+
+aside {
+    grid-area: my-aside;
+    background-color: darkmagenta;
+}
+
+section {
+    grid-area: my-section;
+    background-color: indigo;
+}
+
+footer {
+    grid-area: my-footer;
+    background-color: darkorchid;
+}
