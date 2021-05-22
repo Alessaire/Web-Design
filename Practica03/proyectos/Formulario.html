@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Cinematográfica</title>
+    <link rel="icon" href="log.png">
+
+</head>
+
+<body style="background-color: #aac79f;">
+    <div id="contenedor" style=" margin-left: 500px; margin-right: 500px;"> 
+        <h2 style="text-align: center;">Encuesta de cine: Nominadas al Oscar 2018</h2>
+        <form id="formulario1" name="formulario1" method= "post" action="data.php">
+            <fieldset id="datos_personales">
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre</label> <br>
+                <input type="text" name="Nombre" id="nombre"> <br>
+
+                <label for="dni">DNI</label><br>
+                <input type="text" name="DNI" id="dni" maxlength="8"><br>
+
+                <label for="edad">Edad</label> <br>
+                <input type="number" name="Edad" id="edad" size="2" maxlength="2"> <br>
+
+                <label for="genero">Género</label> <br>
+                <select name="genero" id="genero">
+                    <option> Seleccionar </option>
+                    <option> Masculino </option>
+                    <option> Femenino </option>
+                </select>
+            </fieldset>
+            <fieldset id="mejor_pelicula">
+                <legend>Mejor Película</legend>
+                <input type="radio" name="pelicula" value="11"> Lady Bird <br>
+                <input type="radio" name="pelicula" value="11"> Call Me By Your Name <br>
+                <input type="radio" name="pelicula" value="11"> The Darkest Hour <br>
+                <input type="radio" name="pelicula" value="11"> Dunkerque <br>
+              
+            </fieldset>
+
+            <fieldset id="pelicula_no_vista">
+                <legend> Películas que no hayas visto </legend>
+                <input type="checkbox" name="pelicula" value="11"> Lady Bird <br>
+                <input type="checkbox" name="pelicula" value="11"> Call Me By Your Name <br>
+                <input type="checkbox" name="pelicula" value="11"> The Darkest Hour <br>
+                <input type="checkbox" name="pelicula" value="11"> Dunkerque <br>
+              
+            </fieldset>
+            
+        </form>
+    </div>
+    <div style="margin-right: 350px; margin-top: 30px;"  >
+        <div style="float: right; margin-left: 5px; margin-right: 5px;">
+            <img width="200px" height="300px" 
+            src="img/call-me-by-your-name.jfif" alt="i1">
+        </div>
+        <div style="float: right; margin-left: 5px; margin-right: 5px;">
+            <img width="200px" height="300px"  src="img/darkest-hours.jfif" alt="i2">
+        </div>
+        <div style="float: right; margin-left: 5px; margin-right: 5px;">
+            <img width="200px" height="300px"  src="img/dunkerque.jfif" alt="i3">
+        </div>
+        <div style="float: right; margin-left: 5px; margin-right: 5px;">
+            <img width="200px" height="300px"  src="img/ladybird.jfif" alt="i4">
+        </div>
+    </div>
+
+</body> 
